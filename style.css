@@ -113,6 +113,7 @@ section div p {
   font-size: 25px;
   margin-top: 30px;
   margin-bottom: 60px;
+  text-align: justify;
 }
 
 section div button {
