@@ -57,6 +57,7 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .meu-nome img {
@@ -73,6 +74,7 @@ h1 {
   position: absolute;
   top: 50%;
   left: 7%;
+  margin-left: 90px;
 }
 
 h1 span {
@@ -87,6 +89,7 @@ h1 span {
   position: absolute;
   top: 60%;
   left: 7%;
+  margin-left: 90px;
 }
 
 section {
