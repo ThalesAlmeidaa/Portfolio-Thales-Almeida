@@ -10,50 +10,90 @@
       href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Portfólio | Thales Almeida - Web Developer Front-End</title>
   </head>
 
   <body>
-    <div class="caixa-principal" id="meu-nome">
-      <nav>
-        <h2 class="portfolio">Portfó<span>lio</span></h2>
-        <ul>
-          <li><a class="link-nav" href="#home">Home</a></li>
-          <li><a class="link-nav" href="#sobre">Sobre Mim</a></li>
-          <li><a class="link-nav" href="#projetos-id">Projetos</a></li>
-          <li><a class="link-nav" href="#contatos">Contatos</a></li>
-        </ul>
-      </nav>
+    <nav>
+      <h2 class="portfolio">Portfó<span>lio</span></h2>
+      <ul>
+        <li><a class="link-nav" href="#home">Home</a></li>
+        <li><a class="link-nav" href="#sobre">Sobre Mim</a></li>
+        <li><a class="link-nav" href="#projetos-id">Projetos</a></li>
+        <li><a class="link-nav" href="#contatos">Contatos</a></li>
+      </ul>
+    </nav>
 
-      <div class="meu-nome">
+    <main id="meu-nome">
+      <div class="home">
         <div>
           <h1>Thales <span>Almeida</span></h1>
-          <h3>Programador Front End</h3>
+          <h3>Desenvolvedor Web | Front-End</h3>
         </div>
-        <img src="./img/background.png" />
-      </div>
-    </div>
 
-    <section id="sobre">
-      <img src="./img/logo1.png" alt="minha foto" />
+        <div>
+          <img src="./img/background.png" />
+        </div>
+      </div>
+    </main>
+
+    <section data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine" class="about" id="sobre">
+      <div>
+        <img src="./img/logo1.png" alt="minha foto" />
+      </div>
+
       <div>
         <h2>Sobre mim</h2>
         <p>
-          Oi! Eu sou o Thales, sou um Programador Front End, tenho conhecimento
-          em HTML, CSS, Bootstrap, Javascript, React, Git e Github, sou um
-          amante da tecnologia e da programação e estou em constante
-          aprendizado, sempre em busca de novas tecnologias e técnicas para
-          melhorar minhas habilidades e entregar resultados de qualidade para os
-          meus projetos.
+          Olá! Eu sou o Thales, sou um Desenvolvedor Web Front End, tenho
+          experiência em HTML, CSS, Javascript, Git e Github, sou um amante da
+          tecnologia e da programação e estou em constante aprendizado, sempre
+          em busca de novas tecnologias e técnicas para melhorar minhas
+          habilidades e entregar resultados de qualidade para os meus projetos.
         </p>
         <a href="tel:+5524992780313"><button>Entre em contato</button></a>
       </div>
     </section>
 
-    <div class="projetos" id="projetos-id">
+    <div class="projetos" id="projetos-id" data-aos="zoom-out">
       <h2>Principais Projetos</h2>
 
       <div class="card-projetos">
+        <div class="card">
+          <img src="./img/foco.png" />
+          <h5>Foco MGSB</h5>
+          <p>
+            Landing Page institucional feito com HTML, CSS e Javascript. Com
+            navegação intuitiva e totalmente responsivo.
+          </p>
+          <a>Ver projeto</a>
+        </div>
+
+        <div class="card">
+          <img src="./img/starbucks.png" />
+          <h5>Starbucks</h5>
+          <p>
+            Projeto do starbucks feito com HTML, CSS e Javascript. Com foco em
+            interação com imagens e responsividade.
+          </p>
+          <a>Ver projeto</a>
+        </div>
+
+        <div class="card">
+          <img src="./img/login.webp" />
+          <h5>Tela de Login</h5>
+          <p>Tela de login responsivo, feito em HTML e CSS.</p>
+          <a>Ver projeto</a>
+        </div>
+
         <div class="card">
           <img src="./img/conversor.png" />
           <h5>Conversor</h5>
@@ -62,16 +102,12 @@
         </div>
 
         <div class="card">
-          <img src="./img/formulario.webp" />
-          <h5>Formulário Escolar</h5>
-          <p>Formulário Escolar feito em HTML e CSS.</p>
-          <a>Ver projeto</a>
-        </div>
-
-        <div class="card">
-          <img src="./img/login.webp" />
-          <h5>Tela de Login</h5>
-          <p>Tela de login responsivo, feito em HTML e CSS.</p>
+          <img src="./img/cadeado.png" />
+          <h5>Gerador de Senha</h5>
+          <p>
+            Gerador de Senha moderno e responsivo feito com HTML, CSS e
+            Javascript.
+          </p>
           <a>Ver projeto</a>
         </div>
       </div>
@@ -86,7 +122,16 @@
           ><img src="./img/linkedin.png"
         /></a>
         <a href="tel:+5524992780313"><img src="./img/telefone.png" /></a>
+        <a href="mailto:thalesdeveloper@hotmail.com"
+          ><img src="./img/email.webp"
+        /></a>
       </div>
     </footer>
+
+    <!-- ATIVAR ANIMAÇÕES -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
