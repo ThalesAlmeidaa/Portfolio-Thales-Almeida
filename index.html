@@ -18,8 +18,9 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Portfólio | Thales Almeida - Web Developer Front-End</title>
   </head>
-
   <body>
+
+    <!-- BARRA DE NAVEGAÇÃO -->
     <nav>
       <h2 class="portfolio">Portfó<span>lio</span></h2>
       <ul>
@@ -30,9 +31,10 @@
       </ul>
     </nav>
 
+    <!-- HOME COM NOME, FUNÇÃO E IMAGEM -->
     <main id="meu-nome">
       <div class="home">
-        <div>
+        <div class="home-texto">
           <h1>Thales <span>Almeida</span></h1>
           <h3>Desenvolvedor Web | Front-End</h3>
         </div>
@@ -43,6 +45,7 @@
       </div>
     </main>
 
+    <!-- SOBRE MIM -->
     <section data-aos="fade-right"
     data-aos-offset="300"
     data-aos-easing="ease-in-sine" class="about" id="sobre">
@@ -63,11 +66,13 @@
       </div>
     </section>
 
-    <div class="projetos" id="projetos-id" data-aos="zoom-out">
-      <h2>Principais Projetos</h2>
+    <!-- PROJETOS DE PÁGINAS -->
+    <div class="projetos1" id="projetos-id" data-aos="zoom-out">
+      <h2>Projetos</h2>
+      <h3>Páginas</h3>
 
       <div class="card-projetos">
-        <div class="card">
+        <div class="card card1">
           <img src="./img/foco.png" />
           <h5>Foco MGSB</h5>
           <p>
@@ -77,7 +82,7 @@
           <a>Ver projeto</a>
         </div>
 
-        <div class="card">
+        <div class="card card2">
           <img src="./img/starbucks.png" />
           <h5>Starbucks</h5>
           <p>
@@ -87,21 +92,31 @@
           <a>Ver projeto</a>
         </div>
 
-        <div class="card">
+        <div class="card card3">
           <img src="./img/login.webp" />
           <h5>Tela de Login</h5>
           <p>Tela de login responsivo, feito em HTML e CSS.</p>
           <a>Ver projeto</a>
         </div>
 
-        <div class="card">
+      </div>
+    </div>
+
+    <!-- PROJETOS DE FERRAMENTAS -->
+    <div class="projetos2" id="projetos-id" data-aos="zoom-out">
+      <h2>Projetos</h2>
+      <h3>Ferramentas</h3>
+
+      <div class="card-projetos">
+        
+        <div class="card card4">
           <img src="./img/conversor.png" />
           <h5>Conversor</h5>
           <p>Conversor de Real para Dolar feito em HTML, CSS e Javascript.</p>
           <a>Ver projeto</a>
         </div>
 
-        <div class="card">
+        <div class="card card5">
           <img src="./img/cadeado.png" />
           <h5>Gerador de Senha</h5>
           <p>
@@ -110,9 +125,11 @@
           </p>
           <a>Ver projeto</a>
         </div>
+
       </div>
     </div>
 
+    <!-- FOOTER COM INFORMAÇÕES PARA CONTATO -->
     <footer id="contatos">
       <h5>Para mais informações</h5>
       <p>Entre em contato:</p>
