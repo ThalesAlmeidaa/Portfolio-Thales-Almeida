@@ -1,0 +1,17 @@
+/* ESTILIZAÇÃO PARA PÁGINA DE OUTROS PROJETOS */
+
+main div h2 {
+    padding-top: 90px;
+}
+
+.projetos-titulo h2::after {
+    content: '';
+    background: #F0B232;
+    position: absolute;
+    top: 11rem;
+    height: 5px;
+    width: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+  }
