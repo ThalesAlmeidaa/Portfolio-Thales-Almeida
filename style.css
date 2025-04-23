@@ -34,6 +34,19 @@ nav {
   z-index: 1000;
 }
 
+/* Menu Hamburguer para mobile */
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  z-index: 1001;
+}
+
 nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -459,136 +472,78 @@ nav img {
 
 /* RESPONSIVIDADE PARA TELAS EM GERAL DE COMPUTADOR */
 
-@media (max-width: 1500px) {
+@media (max-width: 1670px) {
 
-  .card1 p {
-    font-size: 14px;
+  .home {
+    padding-bottom: 0;
   }
-
-}
-
-@media (max-width: 1464px) {
-
-  .card2 p {
-    font-size: 14px;
-  }
-
-}
-
-@media (max-width: 1348px) {
-
-  .home img {
-    margin-left: 50px;
-  }
-
-}
-
-@media (max-width: 1273px) {
-
-  .home img {
-    height: 70vh;
-    width: 50vw;
-  }
-
-  .card5 h5 {
-    font-size: 20px;
-  }
-
-}
-
-@media (max-width: 1190px) {
-
-  .about {
-    justify-content: center;
-  }
-
-  .about div img {
-    width: 30vw;
-    height: 50vh;
-  }
-
-  .about div h2 {
-    font-size: 60px;
-  }
-
-  .about div p {
-    margin-bottom: 30px;
-  }
-
-}
-
-@media (max-width: 1150px) {
-
-  .about div p {
-    margin-bottom: 30px;
-  }
-
-  .card1 p {
-    margin-top: 10px;
-    margin-bottom: 30px;
-  }
-
-  .card2 p {
-    margin-top: 10px;
-    margin-bottom: 30px;
-  }
-
-  .card4 p {
-    margin-top: 10px;
-    margin-bottom: 30px;
-  }
-
-  .card5 h5 {
-    font-size: 18px;
-  }
-
-  .card5 p {
-    font-size: 14px;
-  }
-
-  .card5 p {
-    margin-top: 10px;
-    margin-bottom: 40px;
-  }
-
-}
-
-@media (max-width: 1070px) {
-
-  .home-texto {
-    margin-left: -50px;
+  
+  .home-texto h1{
+    font-size: 4rem;
   }
 
   .home div img {
-    height: 60vh;
+    width: 35vw;
+    height: 70vh;
   }
 
-  .about div p {
-    margin-bottom: 30px;
-  }
-
-  .card5 img {
-    width: 5rem;
-    height: 5rem;
-  }
-
-  .card5 h5 {
-    margin-top: 10px;
-  }
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1670px) {
 
-  .projetos2 {
-    width: 60vw;
+  .home {
+    gap: 30px;
   }
 
-  .card5 h5 {
-    font-size: 22px;
+  .home-texto h1, .home-texto h3, .home-texto div{
+    margin-left: 0;
   }
 
-  .card5 p {
-    font-size: 16px;
+  .home div img {
+    width: 38vw;
   }
 
+}
+
+
+/* RESPONSIVIDADE PARA CELULARES */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    background-color: #2E2E2E;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    z-index: 999;
+  }
+
+  #menu-toggle:checked + .menu-icon + ul {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  nav ul li {
+    padding: 15px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul li a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
 }
