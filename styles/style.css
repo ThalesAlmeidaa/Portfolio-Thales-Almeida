@@ -491,6 +491,10 @@ nav img {
     margin-bottom: 40px;
   }
 
+  .about {
+    scroll-margin-top: 50px;
+  }
+
   .about div p {
     margin-top: 0;
   }
