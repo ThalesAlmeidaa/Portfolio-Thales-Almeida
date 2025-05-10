@@ -1,0 +1,225 @@
+/* Estilos para a página Contato */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Paleta de cores */
+    --primary-color: #F3CFC6; /* Rosa Millennial */
+    --secondary-color: #F5E6E8; /* Bege Claro */
+    --tertiary-color: #D5D5D5; /* Cinza Suave */
+    --background-color: #FFFFFF; /* Branco */
+    --accent-color: #D4AF37; /* Dourado */
+    --text-color: #4A4A4A; /* Cinza Escuro para textos */
+    --light-text: #707070; /* Cinza Médio para textos secundários */
+}
+
+.page-header {
+    background-color: #fff;
+    padding: 100px 0 30px;
+    text-align: center;
+}
+
+.page-header h2 {
+    color: #3C5A6E;
+    font-size: 3rem;
+    position: relative;
+    display: inline-block;
+}
+
+.page-header h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: #F0B232;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    gap: 50px;
+}
+
+.contact-info {
+    background-color: #2E2E2E;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.contact-info h3 {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+}
+
+.contact-info h3::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background-color: #F0B232;
+}
+
+.info-item {
+    color: #fff;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.info-item h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form {
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form h3 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+}
+
+.contact-form h3::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background-color: #F0B232;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #3C5A6E;
+}
+
+.btn {
+    color: #000;
+    background-color: #F0B232;
+    height: 60px;
+    width: 200px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    background-color: #ffaa00;
+    transform: scale(1.04);
+  }
+
+/* Responsividade para páginas internas */
+@media (max-width: 992px) {
+    .page-header h2 {
+        font-size: 2.2rem;
+    }
+    
+    .about-section h3,
+    .values-section h3,
+    .differentials-section h3,
+    .service-content h3,
+    .contact-info h3,
+    .contact-form h3 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header {
+        padding: 100px 0 40px;
+    }
+    
+    .page-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .service-item {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .service-icon {
+        margin-right: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-info,
+    .contact-form {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .page-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .about-section h3,
+    .values-section h3,
+    .differentials-section h3,
+    .service-content h3,
+    .contact-info h3,
+    .contact-form h3 {
+        font-size: 1.4rem;
+    }
+    
+    .value-card,
+    .differential-item {
+        padding: 15px;
+    }
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="script.js"></script>
+    <title>Portfólio | Thales Almeida - Contato</title>
+  </head>
+<body>
+    
+     <!-- BARRA DE NAVEGAÇÃO -->
+     <nav>
+      <h2 class="nome">THALES<span> ALMEIDA</span></h2>
+
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+      <ul>
+        <li><a class="link-nav" href="principal.html">Home</a></li>
+        <li><a class="link-nav" href="principal.html#sobre">Sobre Mim</a></li>
+        <li><a class="link-nav" href="principal.html#habilidades">Habilidades</a></li>
+        <li><a class="link-nav" href="principal.html#projetos">Projetos</a></li>
+        <li><a class="link-nav" href="#contatos">Contatos</a></li>
+      </ul>
+    </nav>
+
+    <!-- CONTEÚDO DOS CONTATOS --> 
+    
+    <section class="page-header"> 
+        <h2>Contato</h2>
+    </section>
+
+    <section class="contact-section">
+
+        <div class="container">
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Informações de Contato</h3>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>E-mail:</h4>
+                            <p>thalestr36@gmail.com</p>
+                        </div>
+                    </div> 
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefone:</h4>
+                            <p>(24) 99278-0313</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Envie uma Mensagem</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Assunto</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="creditos">
+      <div>
+        <p>Desenvolvido por Thales Almeida &copy; 2025 - Todos os direitos reservados</p>
+      </div>
+    </footer>
+  
+      
+      <script>
+
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Obrigado pelo seu contato! Retornaremos em breve.');
+            this.reset();
+        });
+
+      </script>
+
+</body>
+</html>

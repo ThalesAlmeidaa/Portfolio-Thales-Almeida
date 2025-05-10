@@ -412,28 +412,32 @@ nav img {
   margin-top: 14px;
 }
 
-.social {
+.contatos-form {
   display: flex;
-  gap: 15px;
-}
-
-.social img {
-  height: 45px;
-}
-
-.social a {
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  height: 50px;
-  width: 50px;
-  cursor: pointer;
-  transition: 0.3s ease-in;
+  margin-top: 1em;
+  gap: 1rem;
 }
 
-.social a:hover {
-  transform: scale(1.3);
+.contatos-form button {
+  border: none;
+  background-color: #F0B232;
+  padding: 0.6em;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.contatos-form button a {
+  text-decoration: none;
+  color: #000;
+}
+
+.contatos-form button:hover {
+  background-color: #d9a829;
+  transform: scale(1.05);
 }
 
 /* ESTILIZAÇÃO DOS CRÉDITOS */
