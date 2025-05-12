@@ -209,4 +209,12 @@ header {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-}  
+}
+
+@media (max-width: 768px) {
+
+    .container-text {
+        text-align: center;
+    }
+
+}

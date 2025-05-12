@@ -5,17 +5,6 @@
     box-sizing: border-box;
 }
 
-:root {
-    /* Paleta de cores */
-    --primary-color: #F3CFC6; /* Rosa Millennial */
-    --secondary-color: #F5E6E8; /* Bege Claro */
-    --tertiary-color: #D5D5D5; /* Cinza Suave */
-    --background-color: #FFFFFF; /* Branco */
-    --accent-color: #D4AF37; /* Dourado */
-    --text-color: #4A4A4A; /* Cinza Escuro para textos */
-    --light-text: #707070; /* Cinza Médio para textos secundários */
-}
-
 .page-header {
     background-color: #fff;
     padding: 100px 0 30px;
@@ -43,6 +32,7 @@
 .contact-section {
     display: flex;
     justify-content: center;
+    background-color: #fff;
 }
 
 .contact-grid {
@@ -81,12 +71,14 @@
     color: #fff;
     display: flex;
     align-items: flex-start;
+    gap: 15px;
     margin-top: 50px;
     margin-bottom: 30px;
 }
 
 .info-item h4 {
     font-size: 1.2rem;
+    line-height: 0.9;
     margin-bottom: 0.5rem;
 }
 

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
@@ -17,7 +17,6 @@
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="script.js"></script>
     <title>Portfólio | Thales Almeida - Contato</title>
   </head>
 <body>
@@ -34,7 +33,7 @@
         <li><a class="link-nav" href="principal.html#sobre">Sobre Mim</a></li>
         <li><a class="link-nav" href="principal.html#habilidades">Habilidades</a></li>
         <li><a class="link-nav" href="principal.html#projetos">Projetos</a></li>
-        <li><a class="link-nav" href="#contatos">Contatos</a></li>
+        <li><a class="link-nav" href="principal.html#contatos">Contatos</a></li>
       </ul>
     </nav>
 
@@ -69,7 +68,7 @@
 
                 <div class="contact-form">
                     <h3>Envie uma Mensagem</h3>
-                    <form id="contactForm">
+                    <form id="contactForm" action="https://formspree.io/f/meogrzao" method="POST">
                         <div class="form-group">
                             <label for="name">Nome</label>
                             <input type="text" id="name" name="name" required>
@@ -90,6 +89,7 @@
                             <label for="message">Mensagem</label>
                             <textarea id="message" name="message" rows="5" required></textarea>
                         </div>
+                        <input type="hidden" name="_redirect" value="http://127.0.0.1:5500/Thales/pages/principal.html">
                         <button type="submit" class="btn">Enviar Mensagem</button>
                     </form>
                 </div>
@@ -107,12 +107,11 @@
       <script>
 
         document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Obrigado pelo seu contato! Retornaremos em breve.');
-            this.reset();
+        alert('Obrigado pelo seu contato! Redirecionando...');
         });
 
       </script>
+
 
 </body>
 </html>
