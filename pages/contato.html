@@ -3,115 +3,138 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>Portfólio | Thales Almeida - Contato</title>
+    <link rel="icon" href="../assets/logo.png" type="image/x-icon" />
+    <title>Portfólio | Contatos</title>
   </head>
-<body>
-    
-     <!-- BARRA DE NAVEGAÇÃO -->
-     <nav>
+  <body>
+    <!-- BARRA DE NAVEGAÇÃO -->
+    <nav>
       <h2 class="nome">THALES<span> ALMEIDA</span></h2>
 
-      <input type="checkbox" id="menu-toggle">
+      <input type="checkbox" id="menu-toggle" />
       <label for="menu-toggle" class="menu-icon">&#9776;</label>
 
       <ul>
         <li><a class="link-nav" href="principal.html">Home</a></li>
         <li><a class="link-nav" href="principal.html#sobre">Sobre Mim</a></li>
-        <li><a class="link-nav" href="principal.html#habilidades">Habilidades</a></li>
+        <li>
+          <a class="link-nav" href="principal.html#habilidades">Habilidades</a>
+        </li>
         <li><a class="link-nav" href="principal.html#projetos">Projetos</a></li>
         <li><a class="link-nav" href="principal.html#contatos">Contatos</a></li>
       </ul>
     </nav>
 
-    <!-- CONTEÚDO DOS CONTATOS --> 
-    
-    <section class="page-header"> 
-        <h2>Contato</h2>
+    <!-- CONTEÚDO DOS CONTATOS -->
+
+    <section class="page-header" data-aos="fade-up" data-aos-duration="800">
+      <h2>Contato</h2>
     </section>
 
     <section class="contact-section">
-
-        <div class="container">
-
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <h3>Informações de Contato</h3>
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>E-mail:</h4>
-                            <p>thalestr36@gmail.com</p>
-                        </div>
-                    </div> 
-                    <div class="info-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>Telefone:</h4>
-                            <p>(24) 99278-0313</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contact-form">
-                    <h3>Envie uma Mensagem</h3>
-                    <form id="contactForm" action="https://formspree.io/f/meogrzao" method="POST">
-                        <div class="form-group">
-                            <label for="name">Nome</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">E-mail</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Telefone</label>
-                            <input type="tel" id="phone" name="phone">
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Assunto</label>
-                            <input type="text" id="subject" name="subject" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Mensagem</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <input type="hidden" name="_redirect" value="http://127.0.0.1:5500/Thales/pages/principal.html">
-                        <button type="submit" class="btn">Enviar Mensagem</button>
-                    </form>
-                </div>
+      <div class="container">
+        <div class="contact-grid">
+          <div
+            class="contact-info"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
+            <h3>Informações de Contato</h3>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>E-mail:</h4>
+                <p>thalestr36@gmail.com</p>
+              </div>
             </div>
+            <div class="info-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h4>Telefone/Whatsapp:</h4>
+                <p>(24) 99278-0313</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="contact-form"
+            data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="500"
+          >
+            <h3>Envie uma Mensagem</h3>
+            <form
+              id="contactForm"
+              action="https://formspree.io/f/meogrzao"
+              method="POST"
+            >
+              <div class="form-group">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Telefone</label>
+                <input type="tel" id="phone" name="phone" />
+              </div>
+              <div class="form-group">
+                <label for="subject">Assunto</label>
+                <input type="text" id="subject" name="subject" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Mensagem</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <input
+                type="hidden"
+                name="_redirect"
+                value="http://127.0.0.1:5500/Portf%C3%B3lio%20-%20Thales%20Almeida/pages/principal.html"
+              />
+              <button type="submit" class="btn">Enviar Mensagem</button>
+            </form>
+          </div>
         </div>
+      </div>
     </section>
 
     <footer class="creditos">
       <div>
-        <p>Desenvolvido por Thales Almeida &copy; 2025 - Todos os direitos reservados</p>
+        <p>
+          Desenvolvido por Thales Almeida &copy; 2025 - Todos os direitos
+          reservados
+        </p>
       </div>
     </footer>
-  
-      
-      <script>
 
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-        alert('Obrigado pelo seu contato! Redirecionando...');
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          alert("Obrigado pelo seu contato! Redirecionando...");
         });
+    </script>
 
-      </script>
-
-
-</body>
+    <!-- ATIVAR ANIMAÇÕES -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>

@@ -3,29 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" href="../assets/logo.png" type="image/x-icon" />
     <script src="../script.js"></script>
     <title>Portfólio | Thales Almeida - Web Developer</title>
   </head>
   <body>
-    
     <!-- BARRA DE NAVEGAÇÃO -->
-    <nav>
+    <nav
+      data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-back"
+      data-aos-delay="20"
+      data-aos-offset="0"
+    >
       <h2 class="nome">THALES<span> ALMEIDA</span></h2>
 
-      <input type="checkbox" id="menu-toggle">
+      <input type="checkbox" id="menu-toggle" />
       <label for="menu-toggle" class="menu-icon">&#9776;</label>
 
       <ul>
@@ -33,14 +31,19 @@
         <li><a class="link-nav" href="#sobre">Sobre Mim</a></li>
         <li><a class="link-nav" href="#habilidades">Habilidades</a></li>
         <li><a class="link-nav" href="#projetos">Projetos</a></li>
-        <li><a class="link-nav" href="#contatos">Contatos</a></li>
+        <li><a class="link-nav" href="contato.html">Contatos</a></li>
       </ul>
     </nav>
 
     <!-- HOME COM NOME, FUNÇÃO E IMAGEM -->
     <main id="home">
       <div class="home">
-        <div class="home-texto">
+        <div
+          class="home-texto"
+          data-aos="fade-right"
+          data-aos-offset="100"
+          data-aos-easing="ease-in-sine"
+        >
           <h1>Olá! Eu sou o <br />Thales Almeida</h1>
           <h3>Desenvolvedor Web | Front-End</h3>
 
@@ -55,8 +58,16 @@
             >
           </div>
         </div>
-        <div>
-          <img src="../assets/background1.png" alt="personagem usando oculos escuro, com copo de café do lado e um laptop.">
+        <div
+          data-aos="fade-left"
+          data-aos-anchor="#example-anchor"
+          data-aos-offset="200"
+          data-aos-duration="500"
+        >
+          <img
+            src="../assets/logo.png"
+            alt="personagem usando oculos escuro, com copo de café do lado e um laptop."
+          />
         </div>
       </div>
     </main>
@@ -85,7 +96,11 @@
 
     <!-- HABILIDADES -->
 
-    <section class="habilidades-container" id="habilidades" data-aos="fade-right">
+    <section
+      class="habilidades-container"
+      id="habilidades"
+      data-aos="fade-right"
+    >
       <h2>Habilidades</h2>
 
       <div class="habilidades-cards-container">
@@ -155,13 +170,13 @@
           <div class="card1-texto">
             <h5>Foco MGSB</h5>
             <p>
-              Landing page desenvolvida para a empresa FOCO MGSB, com foco em
-              design responsivo, navegação fluida e apresentação clara dos
-              serviços. O projeto foi feito com HTML, CSS e JavaScript,
-              incluindo efeitos de scroll, menu responsivo, cards interativos e
-              integração com o Google Maps.
+              <b>Meu primeiro site</b>. Landing page desenvolvida para a empresa
+              FOCO MGSB, com foco em design responsivo, navegação fluida e
+              apresentação clara dos serviços. O projeto foi feito com HTML, CSS
+              e JavaScript, incluindo efeitos de scroll, menu responsivo, cards
+              interativos e integração com o Google Maps.
             </p>
-            <a href="" target="_blank">Ver projeto</a>
+            <a href="https://focomgsb.com/" target="_blank">Ver projeto</a>
           </div>
         </div>
 
@@ -172,9 +187,17 @@
           <div class="card1-texto">
             <h5>Landing Page - Raquel Araujo Contabilidade</h5>
             <p>
-              Site institucional responsivo desenvolvido para a contadora Raquel Araújo, com foco em apresentar serviços contábeis, valores profissionais e facilitar o contato com clientes. Projeto construído com HTML, CSS e JavaScript, com design moderno, navegação intuitiva e boa performance responsiva.
+              Site institucional responsivo desenvolvido para a contadora Raquel
+              Araújo, com foco em apresentar serviços contábeis, valores
+              profissionais e facilitar o contato com clientes. Projeto
+              construído com HTML, CSS e JavaScript, com design moderno,
+              navegação intuitiva e boa performance responsiva.
             </p>
-            <a href="https://raquelaraujo-contabilidade.netlify.app/" target="_blank">Ver projeto</a>
+            <a
+              href="https://raquelaraujo-contabilidade.netlify.app/"
+              target="_blank"
+              >Ver projeto</a
+            >
           </div>
         </div>
 
@@ -205,11 +228,13 @@
           <div class="card1-texto">
             <h5>TechPulse Store</h5>
             <p>
-              O TechPulse Store website é uma landing page desenvolvida com foco em inovação, tecnologia e experiência do usuário. Desenvolvida com HTML, CSS e JavaScript. O foco principal foi a criação de um layout moderno e atrativo, com destaque para a troca dinâmica de produtos.
+              O TechPulse Store website é uma landing page desenvolvida com foco
+              em inovação, tecnologia e experiência do usuário. Desenvolvida com
+              HTML, CSS e JavaScript. O foco principal foi a criação de um
+              layout moderno e atrativo, com destaque para a troca dinâmica de
+              produtos.
             </p>
-            <a
-              href="https://modern-tech-website.netlify.app/"
-              target="_blank"
+            <a href="https://modern-tech-website.netlify.app/" target="_blank"
               >Ver projeto</a
             >
           </div>
@@ -221,22 +246,26 @@
         </div>
       </div>
     </section>
-    
+
     <!-- FOOTER COM INFORMAÇÕES PARA CONTATO -->
 
     <footer id="contatos" class="contatos">
       <h5>Para mais <span>informações</span></h5>
-      
+
       <div class="contatos-form">
         <p>Entre em contato:</p>
-        <a href="contato.html"><button class="btn-contato">Clique aqui</button></a>
+        <a href="contato.html"
+          ><button class="btn-contato">Clique aqui</button></a
+        >
       </div>
-
     </footer>
 
     <footer class="creditos">
       <div>
-        <p>Desenvolvido por Thales Almeida &copy; 2025 - Todos os direitos reservados</p>
+        <p>
+          Desenvolvido por Thales Almeida &copy; 2025 - Todos os direitos
+          reservados
+        </p>
       </div>
     </footer>
 
