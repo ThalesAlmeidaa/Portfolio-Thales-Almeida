@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (!imagem || !divImg || !textoSobre || !paragrafo) return;
 
-    if (largura <= 428) {
+    if (largura <= 700) {
       
       if (imagem.parentElement !== textoSobre) {
         textoSobre.insertBefore(imagem, paragrafo);
